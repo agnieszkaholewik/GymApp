@@ -30,6 +30,9 @@ export const globalStyles = StyleSheet.create({
       },
       header: {
         backgroundColor:"#008b8b"
+      },
+      stoper:{
+        flex:1,
       }
 
     
