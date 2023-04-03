@@ -9,7 +9,7 @@ function Result({ results }) {
 {results.map((item, index) => (
         <View key={index} style={styles.resultItem}>
           <Text style={styles.resultItemText}>
-            Lap {results.length - index}
+            Runda {results.length - index}
           </Text>
 <Text style={styles.resultItemText}>{displayTime(item)}</Text>
         </View>
