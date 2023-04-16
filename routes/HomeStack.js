@@ -15,9 +15,10 @@ import { Image } from 'expo-image';
 const Stack = createStackNavigator();
 const HomeTabNavigator = () => {
     return (
+      <View>
+        {/* <Image source=""/> */}
         <NavigationContainer>
         <Stack.Navigator>
-       
          <Stack.Screen name="Ekran Startowy" component={Home} options={{title: 'Ekran startowy',headerStyle: {
                  backgroundColor: '#008080', 
                },headerTitleStyle: {
@@ -32,12 +33,8 @@ const HomeTabNavigator = () => {
          <Stack.Screen name="Przypomnienia" component={Przypomnienia} />
           
          </Stack.Navigator>
-     
-
-         
-        
-     
         </NavigationContainer>
+        </View>
     );
 };
 export default HomeTabNavigator;
