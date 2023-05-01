@@ -6,6 +6,7 @@ import { AntDesign } from "@expo/vector-icons";
 import tempData from "../tempData";
 import TwojeTreningi from "../components/TwojeTreningi";
 import Modal from "react-native-modal";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 
@@ -19,6 +20,30 @@ export default function TwójTrening(props) {
  
 
 
+  useEffect(() => {
+    loadLists();
+  }, []);
+
+  const loadLists = async () => {
+    try {
+      const value = await AsyncStorage.getItem('lists');
+      if (value !== null) {
+        setLists(JSON.parse(value));
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  const saveLists = async (lists) => {
+    try {
+      const jsonValue = JSON.stringify(lists);
+      await AsyncStorage.setItem('lists', jsonValue);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   const handleModal = () => setIsModalVisible(!isModalVisible);
 
   const navigation = useNavigation();
@@ -28,18 +53,21 @@ export default function TwójTrening(props) {
   }
 
   const addList = (list) => {
-    setLists([
+    const newLists = [
       ...lists,
       { ...list, id: lists.length + 1, todos: [] }
-    ]);
+    ];
+    setLists(newLists);
+    saveLists(newLists); // zapisujemy listy w AsyncStorage
   };
 
   const updateList = (list) => {
-    setLists(lists.map(item=>{
+    const newLists = lists.map(item=>{
         return item.id===list.id ? list : item
-    }));
+    });
+    setLists(newLists);
+    saveLists(newLists); // zapisujemy listy w AsyncStorage
   }
-
   return (
     <View>
       <Modal animationType="slide" isVisible={isModalVisible} backdropColor="white" transparent={false}>

@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { View, Text, FlatList, TextInput, Button, Platform } from 'react-native';
+import { View, Text, FlatList,  Button, Platform, Pressable } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import * as Notifications from 'expo-notifications';
 import { StyleSheet } from "react-native";
+import { globalStyles } from "../styles/global";
+import { TextInput } from 'react-native-paper';
 
 export default function App() {
   const [notifications, setNotifications] = useState([]);
@@ -52,29 +54,40 @@ export default function App() {
   };
 
   const renderItem = ({ item }) => (
-    <View style={{ borderBottomWidth: 1, paddingVertical: 5 }}>
+    <View style={{ borderBottomWidth: 2, paddingVertical: 5 }}>
       <Text style={{ fontSize: 16, fontWeight: 'bold' }}>{item.title}</Text>
       <Text>{item.description}</Text>
       <Text>{item.date}</Text>
-      <Button title="Usuń" onPress={() => removeNotification(item.id)} />
+      <Button title="Usuń" onPress={() => removeNotification(item.id)} color="black"/>
     </View>
   );
 
   return (
     <View style={{ flex: 1, padding: 30 }}>
+    
       <TextInput
-        placeholder="Tytuł"
+      mode="outlined"
+      outlineColor='#008080'
+      activeOutlineColor='#008080'
+    
+        label="Tytuł"
         value={title}
         onChangeText={(text) => setTitle(text)}
         style={styles.text}
       />
       <TextInput
-        placeholder="Opis"
+      mode="outlined"
+      outlineColor='#008080'
+      activeOutlineColor='#008080'
+    
+        label="Opis"
         value={description}
         onChangeText={(text) => setDescription(text)}
         style={styles.text}
+       
       />
-      <Button title="Wybierz date" onPress={showDatepicker} style={styles.button} />
+
+      <Button title="Wybierz date" onPress={showDatepicker} style={styles.button} color="black"/>
       {showDatePicker && (
         <DateTimePicker
           value={date}
@@ -84,7 +97,7 @@ export default function App() {
           style={styles.czasdata}
         />
       )}
-      <Button title="Dodaj" onPress={addNotification} style={styles.button} />
+      <Button title="Dodaj" onPress={addNotification} style={styles.button} color="black"/>
       <FlatList
         data={notifications}
         renderItem={renderItem}
@@ -96,12 +109,7 @@ export default function App() {
 }
 const styles = StyleSheet.create({
 text: {
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: 40,
-    margin: 10,
-    borderWidth: 1,
-    padding: 10,
+ 
 
 },
 button: {
@@ -109,7 +117,7 @@ button: {
   justifyContent: 'center',
   borderBottomWidth: 1, 
   marginBottom: 10,
-  marginTop: 10,
+  marginTop: 15,
   borderWidth: 2,
   borderColor: 'blue',
   backgroundColor: 'blue',
@@ -126,7 +134,8 @@ buttonText: {
 czasdata: {
   justifyContent: 'center',
   width: 260,
-  marginTop: 10
+  marginTop: 10,
+  paddingRight:50
 },
 delete: {
 
