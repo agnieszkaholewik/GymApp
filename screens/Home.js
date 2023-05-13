@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import React, {useState} from 'react';
-import {View, Text, Button, StyleSheet, Pressable} from 'react-native';
+import {View, Text, Button, StyleSheet, Pressable,Image} from 'react-native';
 import { globalStyles } from "../styles/global";
 
 
@@ -35,9 +35,20 @@ export default function Home(props){
     const { onPress, title = 'Monitorowanie wagi', title2='Zbiór Ćwiczeń', title3='Stoper', title4='Twój trening', title5='Przypomnienia' } = props;
     return (
 
-      
-        <View>
-      
+       <View>
+       <Image  
+       style={{ width: 210,
+    height: 190,
+    resizeMode: 'stretch',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop:20
+   }}
+   source={require('../assets/silownia_logo_2.png')}
+
+        />
         <Pressable style={globalStyles.button} onPress={pressHandler2}>
       <Text style={globalStyles.text}>{title2} </Text>
     </Pressable>
@@ -57,8 +68,8 @@ export default function Home(props){
     <Pressable style={globalStyles.button} onPress={pressHandler5}>
       <Text style={globalStyles.text}>{title5} </Text>
     </Pressable>
-
-    </View>
+</View>
+  
     )
 
     

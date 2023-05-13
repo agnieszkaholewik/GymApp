@@ -15,18 +15,13 @@ export default function App() {
  
 
   return (
+ 
 
-    <NavigationContainer>
+    <NavigationContainer> 
+    
         <DrawerNavigator />
     </NavigationContainer>
-
+   
   );
 }
-
-
-
-
-
-    
-
 
