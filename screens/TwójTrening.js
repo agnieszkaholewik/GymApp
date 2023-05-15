@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import React, { useEffect, useState } from 'react';
-import { View, Text, Pressable, FlatList, TextInput, TouchableOpacity, Swipeable } from 'react-native';
+import { View, Text, Pressable,Button, FlatList, TextInput } from 'react-native';
 import { globalStyles } from "../styles/global";
 import { AntDesign } from "@expo/vector-icons";
 import tempData from "../tempData";
@@ -34,9 +34,15 @@ export default function TwójTrening(props) {
       console.log(error);
     }
   }
-
+  
+  const removeList = async (id) => {
+    const newLists = lists.filter((list) => list.id !== id);
+    setLists(newLists);
+    saveLists(newLists); // zapisujemy listy w AsyncStorage
+    };
   const saveLists = async (lists) => {
     try {
+      
       const jsonValue = JSON.stringify(lists);
       await AsyncStorage.setItem('lists', jsonValue);
     } catch (error) {
@@ -54,14 +60,17 @@ export default function TwójTrening(props) {
   const navigation = useNavigation();
 
   const renderList = ({ item }) => {
-    return <TwojeTreningi list={item} updateList={updateList} />
-  }
+    return (
+      <View>
+        <TwojeTreningi list={item} updateList={updateList} />
+        <Button title="Usuń" onPress={() => removeList(item.id)} />
+      </View>
+    );
+  };
 
   const addList = (list) => {
-    const newLists = [
-      ...lists,
-      { ...list, id: lists.length + 1, todos: [] }
-    ];
+    const newLists = [    ...lists,    { ...list, id: Date.now().toString(), todos: [] } // dodajemy pole "id" 
+  ];
     setLists(newLists);
     saveLists(newLists); // zapisujemy listy w AsyncStorage
   };
@@ -103,8 +112,7 @@ export default function TwójTrening(props) {
       <View style={{ justifyContent: 'center' }}>
       
         <Text style={{ marginTop: 50, fontSize: 16, fontWeight: 'bold', color: 'black', marginLeft: 25 }}>TWOJE TRENINGI:</Text>
-        <FlatList data={lists} keyExtractor={item => item.name} vertical={true} showsVerticalScrollIndicator={false} renderItem={renderList} keyboardShouldPersistTaps="always"/>
-        
+        <FlatList data={lists}  keyExtractor={(item) => item.id.toString()} vertical={true} showsVerticalScrollIndicator={false} renderItem={renderList} keyboardShouldPersistTaps="always"/>
       </View>
     </View>
   );

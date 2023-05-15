@@ -79,7 +79,7 @@ const DrawerNavigator = () => {
                  fontWeight: 'bold',
                  color:'white',
                 
-               },}}/> 
+               }, }}/> 
 
      
                <Drawer.Screen name="Klatka" component={Klatka} options={{title: 'KLATKA PIERSIOWA',headerStyle: {
