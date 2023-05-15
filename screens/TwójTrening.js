@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import React, { useEffect, useState } from 'react';
-import { View, Text, Pressable, FlatList, TextInput } from 'react-native';
+import { View, Text, Pressable, FlatList, TextInput, TouchableOpacity, Swipeable } from 'react-native';
 import { globalStyles } from "../styles/global";
 import { AntDesign } from "@expo/vector-icons";
 import tempData from "../tempData";
@@ -44,6 +44,11 @@ export default function TwójTrening(props) {
     }
   }
 
+  
+
+
+  
+
   const handleModal = () => setIsModalVisible(!isModalVisible);
 
   const navigation = useNavigation();
@@ -67,7 +72,12 @@ export default function TwójTrening(props) {
     });
     setLists(newLists);
     saveLists(newLists); // zapisujemy listy w AsyncStorage
-  }
+  };
+
+  
+  
+  
+  
   return (
     <View>
       <Modal animationType="slide" isVisible={isModalVisible} backdropColor="white" transparent={false}>
@@ -91,8 +101,10 @@ export default function TwójTrening(props) {
       </Pressable>
 
       <View style={{ justifyContent: 'center' }}>
+      
         <Text style={{ marginTop: 50, fontSize: 16, fontWeight: 'bold', color: 'black', marginLeft: 25 }}>TWOJE TRENINGI:</Text>
         <FlatList data={lists} keyExtractor={item => item.name} vertical={true} showsVerticalScrollIndicator={false} renderItem={renderList} keyboardShouldPersistTaps="always"/>
+        
       </View>
     </View>
   );

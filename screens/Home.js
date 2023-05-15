@@ -32,6 +32,10 @@ export default function Home(props){
     }
 
     
+  
+
+
+    
     const { onPress, title = 'Monitorowanie wagi', title2='Zbiór Ćwiczeń', title3='Stoper', title4='Twój trening', title5='Przypomnienia' } = props;
     return (
 
@@ -68,6 +72,8 @@ export default function Home(props){
     <Pressable style={globalStyles.button} onPress={pressHandler5}>
       <Text style={globalStyles.text}>{title5} </Text>
     </Pressable>
+
+    
 </View>
   
     )
