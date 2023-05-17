@@ -25,7 +25,7 @@ const SpisĆwiczeń = () => {
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Biceps')}>
     <Text style={globalStyles.text}>BICEPS</Text>
   </Pressable>
-
+ 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Triceps')}>
     <Text style={globalStyles.text}>TRICEPS</Text>
   </Pressable>
