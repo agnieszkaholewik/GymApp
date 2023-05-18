@@ -1,7 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
 import React from 'react';
 import {View, Text, StyleSheet, Button, Pressable} from 'react-native';
-import { globalStyles } from "../../styles/global";
+import { globalStyles } from "../../../styles/global";
 
 export default function Udaipos(){
 const navigation = useNavigation();
