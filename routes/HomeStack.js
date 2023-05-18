@@ -8,7 +8,7 @@ import Pomiary from '../screens/Pomiary';
 import Stoper from '../screens/Stoper';
 import TwójTrening from '../screens/TwójTrening'
 import Przypomnienia from '../screens/Przypomnienia';
-import Klatka from '../screens/Cwiczenia/Klatka';
+import Klatka from '../screens/Cwiczenia/Klatka_folder/Klatka';
 
 
 
