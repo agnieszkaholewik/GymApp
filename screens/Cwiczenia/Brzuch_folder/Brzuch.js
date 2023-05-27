@@ -1,9 +1,9 @@
 import { useNavigation } from "@react-navigation/native";
 import React from 'react';
 import {View, Text, StyleSheet, Button, Pressable} from 'react-native';
-import { globalStyles } from "../../styles/global";
+import { globalStyles } from "../../../styles/global";
 
-export default function Barki(){
+export default function Brzuch(){
 const navigation = useNavigation();
 
 
@@ -14,19 +14,23 @@ return (
 
    
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Arnoldki </Text>
+    <Text style={globalStyles.text}>Wypychanie nóg ku górze </Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Face Pull </Text>
+    <Text style={globalStyles.text}>Plank</Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Odwodzenie ramion w bok ze sztangielkami</Text>
+    <Text style={globalStyles.text}>Unoszenie ugiętych nóg ku górze na drążku</Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Cuban Press</Text>
+    <Text style={globalStyles.text}>Skręty do boku </Text>
+  </Pressable>
+
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
+    <Text style={globalStyles.text}>Allahy</Text>
   </Pressable>
 
   </View>

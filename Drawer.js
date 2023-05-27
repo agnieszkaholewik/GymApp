@@ -6,19 +6,20 @@ import Pomiary from '../GymApp/screens/Pomiary';
 import Stoper from '../GymApp/screens/Stoper'
 import TwójTrening from '../GymApp/screens/TwójTrening';
 import Przypomnienia from '../GymApp/screens/Przypomnienia';
-import Plecy from './screens/Cwiczenia/Plecy';
-import Barki from './screens/Cwiczenia/Barki';
+import Plecy from './screens/Cwiczenia/Plecy_folder/Plecy';
+import Barki from './screens/Cwiczenia/Barki_folder/Barki';
 
 import {
   createDrawerNavigator,
 } from '@react-navigation/drawer';
-import Klatka from './screens/Cwiczenia/Klatka';
-import Biceps from './screens/Cwiczenia/Biceps';
-import Triceps from './screens/Cwiczenia/Triceps';
-import Udaipos from './screens/Cwiczenia/Udaipos';
-import Brzuch from './screens/Cwiczenia/Brzuch';
-import Lydki from './screens/Cwiczenia/Lydki';
-
+import Klatka from './screens/Cwiczenia/Klatka_folder/Klatka';
+import Biceps from './screens/Cwiczenia/Biceps_folder/Biceps';
+import Triceps from './screens/Cwiczenia/Triceps_folder/Triceps';
+import Udaipos from './screens/Cwiczenia/Udaipos_folder/Udaipos';
+import Brzuch from './screens/Cwiczenia/Brzuch_folder/Brzuch';
+import Lydki from './screens/Cwiczenia/Lydki_folder/Lydki';
+import Rozpietki from './screens/Cwiczenia/Klatka_folder/Rozpietki';
+import Wyciskanie from './screens/Cwiczenia/Klatka_folder/Wyciskanie';
 
 
 
@@ -139,6 +140,22 @@ const DrawerNavigator = () => {
                }, drawerLabel:''}}/> 
 
                <Drawer.Screen name="Lydki" component={Lydki} options={{title: 'ŁYDKI' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="Rozpietki" component={Rozpietki} options={{title: 'Rozpiętki z hantlami' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="Wyciskanie" component={Wyciskanie} options={{title: 'Wyciskanie sztangi' ,headerStyle: {
                  backgroundColor: '#008080', 
                },headerTitleStyle: {
                  fontWeight: 'bold',

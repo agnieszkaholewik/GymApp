@@ -1,9 +1,9 @@
 import { useNavigation } from "@react-navigation/native";
 import React from 'react';
 import {View, Text, StyleSheet, Button, Pressable} from 'react-native';
-import { globalStyles } from "../../styles/global";
+import { globalStyles } from "../../../styles/global";
 
-export default function Triceps(){
+export default function Lydki(){
 const navigation = useNavigation();
 
 
@@ -14,18 +14,18 @@ return (
 
    
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Dipy na maszynie </Text>
+    <Text style={globalStyles.text}>Wspięcia na palcach na suwnicy </Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Prostowanie przedramion z hantlem zza głowy siedząc</Text>
+    <Text style={globalStyles.text}>Wspięcia na palcach stojąc ze sztangą trzymaną na plecach </Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Wyprosty na wyciągu górnym</Text>
+    <Text style={globalStyles.text}>Wspięcia na palcach stojąc z hantlą</Text>
   </Pressable>
 
-  
+
 
   </View>
         

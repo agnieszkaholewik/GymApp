@@ -1,9 +1,9 @@
 import { useNavigation } from "@react-navigation/native";
 import React from 'react';
 import {View, Text, StyleSheet, Button, Pressable} from 'react-native';
-import { globalStyles } from "../../styles/global";
+import { globalStyles } from "../../../styles/global";
 
-export default function Klatka(){
+export default function Barki(){
 const navigation = useNavigation();
 
 
@@ -14,19 +14,19 @@ return (
 
    
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Rozpiętki z hantlami </Text>
+    <Text style={globalStyles.text}>Arnoldki </Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Wyciskanie sztangi </Text>
+    <Text style={globalStyles.text}>Face Pull </Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Wznosy ramion z wykorzystaniem dolnego wyciągu </Text>
+    <Text style={globalStyles.text}>Odwodzenie ramion w bok ze sztangielkami</Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Pompki na poręczach </Text>
+    <Text style={globalStyles.text}>Cuban Press</Text>
   </Pressable>
 
   </View>
