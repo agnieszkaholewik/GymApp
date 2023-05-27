@@ -1,15 +1,17 @@
 import { useNavigation } from "@react-navigation/native";
 import React from 'react';
-import { View, Text, Pressable } from 'react-native';
+import { View, Text, Pressable, Button} from 'react-native';
 import { globalStyles } from "../styles/global";
 
-const SpisĆwiczeń = () => {
-  const navigation = useNavigation();
+const SpisĆwiczeń = ({ navigation }) => {
+  
+
 
   return (
 
 
 <View>
+ 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Klatka')}>
     <Text style={globalStyles.text}>KLATKA PIERSIOWA</Text>
   </Pressable>
