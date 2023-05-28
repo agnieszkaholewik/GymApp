@@ -2,10 +2,12 @@ import { useNavigation } from "@react-navigation/native";
 import React from 'react';
 import {View, Text, StyleSheet, Button, Pressable} from 'react-native';
 import { globalStyles } from "../../../styles/global";
+import { ScrollView } from "react-native-gesture-handler";
 
 export default function Wznosy(){
 const navigation = useNavigation();
 return (
+    <ScrollView>
     <View>
  
     <Text style={globalStyles.text}>
@@ -26,5 +28,6 @@ return (
     </Text>
     
    </View>
+   </ScrollView>
  )
  }

@@ -15,14 +15,14 @@ return (
    
 
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Plank')}>
     <Text style={globalStyles.text}>Plank</Text>
   </Pressable>
 
   
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Skosy </Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Skosy')}>
+    <Text style={globalStyles.text}>Rowerek </Text>
   </Pressable>
 
 

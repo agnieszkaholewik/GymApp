@@ -30,6 +30,12 @@ import Wykroki from './screens/Cwiczenia/Udaipos_folder/Wykroki';
 import Wchodzenie from './screens/Cwiczenia/Udaipos_folder/Wchodzenie';
 import UginanieSztanga from './screens/Cwiczenia/Biceps_folder/UginanieSztanga';
 import UginanieLinka from './screens/Cwiczenia/Biceps_folder/UginanieLinka';
+import FacePull from './screens/Cwiczenia/Barki_folder/FacePull';
+import Odwodzenie from './screens/Cwiczenia/Barki_folder/Odwodzenie';
+import Plank from './screens/Cwiczenia/Brzuch_folder/Plank';
+import Rowerek from './screens/Cwiczenia/Brzuch_folder/Rowerek';
+import UginanieKolano from './screens/Cwiczenia/Biceps_folder/UginanieKolano';
+import WyciskanieBiceps from './screens/Cwiczenia/Biceps_folder/WyciskanieBiceps';
 
 
 
@@ -236,7 +242,7 @@ const DrawerNavigator = () => {
                  
                }, drawerLabel:''}}/> 
 
-               <Drawer.Screen name="UginanieSztanga" component={UginanieSztanga} options={{title: 'Uginanie przedramion ze sztangą' ,headerStyle: {
+               <Drawer.Screen name="UginanieSztanga" component={UginanieSztanga} options={{title: 'Uginanie przedramion ze sztangielkami' ,headerStyle: {
                  backgroundColor: '#008080', 
                },headerTitleStyle: {
                  fontWeight: 'bold',
@@ -251,6 +257,56 @@ const DrawerNavigator = () => {
                  color:'white',
                  
                }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="FacePull" component={FacePull} options={{title: 'Shoulder Press' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="Odwodzenie" component={Odwodzenie} options={{title: 'Odwodzenie ramion w bok ze sztangielkami' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="Plank" component={Plank} options={{title: 'Plank' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="Rowerek" component={Rowerek} options={{title: 'Rowerek' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="UginanieKolano" component={UginanieKolano} options={{title: 'Uginanie przedramienia ze sztangielką przez kolano' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="WyciskanieBiceps" component={WyciskanieBiceps} options={{title: 'Wyciskanie hantla zza głowy siedząc' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+      
+      
       
       </Drawer.Navigator>
      );
