@@ -22,11 +22,11 @@ return (
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Uginanie ramion z hantlami na modlitewniku</Text>
+    <Text style={globalStyles.text}>Uginanie przedramienia ze sztangielką przez kolano</Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Zottmann Curl</Text>
+    <Text style={globalStyles.text}>Wyciskanie hantla zza głowy siedząc</Text>
   </Pressable>
 
   </View>

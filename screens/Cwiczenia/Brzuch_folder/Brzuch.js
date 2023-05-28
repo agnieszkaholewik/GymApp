@@ -13,25 +13,19 @@ return (
 
 
    
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Wypychanie nóg ku górze </Text>
-  </Pressable>
+
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
     <Text style={globalStyles.text}>Plank</Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Unoszenie ugiętych nóg ku górze na drążku</Text>
-  </Pressable>
+  
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Skręty do boku </Text>
+    <Text style={globalStyles.text}>Skosy </Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Allahy</Text>
-  </Pressable>
+
 
   </View>
         

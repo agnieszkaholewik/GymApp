@@ -14,7 +14,7 @@ return (
 
    
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Wiosłowanie jednorącz </Text>
+    <Text style={globalStyles.text}>Lat Pulldown </Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
@@ -22,11 +22,11 @@ return (
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Dzień dobry </Text>
+    <Text style={globalStyles.text}>Podciąganie </Text>
   </Pressable>
 
   <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Ściąganie drążka wyciągu górnego podchwytem do klatki</Text>
+    <Text style={globalStyles.text}>Wyciskanie jednorącz</Text>
   </Pressable>
 
   </View>
