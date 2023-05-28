@@ -13,11 +13,11 @@ return (
 
 
    
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('UginanieSztanga')}>
     <Text style={globalStyles.text}>Uginanie przedramion ze sztangą </Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('UginanieLinka')}>
     <Text style={globalStyles.text}>Uginanie przedramion z linką wyciągu dolnego oburącz</Text>
   </Pressable>
 

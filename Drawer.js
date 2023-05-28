@@ -22,7 +22,14 @@ import Rozpietki from './screens/Cwiczenia/Klatka_folder/Rozpietki';
 import Wyciskanie from './screens/Cwiczenia/Klatka_folder/Wyciskanie';
 import Wznosy from './screens/Cwiczenia/Klatka_folder/Wznosy';
 import Pompki from './screens/Cwiczenia/Klatka_folder/Pompki';
-
+import HipThrust from './screens/Cwiczenia/Udaipos_folder/HipThrust';
+import Przysiady from './screens/Cwiczenia/Udaipos_folder/Przysiady';
+import PrzysiadyKlasyczne from './screens/Cwiczenia/Udaipos_folder/PrzysiadyKlasyczne';
+import MartwyCiag from './screens/Cwiczenia/Udaipos_folder/MartwyCiag';
+import Wykroki from './screens/Cwiczenia/Udaipos_folder/Wykroki';
+import Wchodzenie from './screens/Cwiczenia/Udaipos_folder/Wchodzenie';
+import UginanieSztanga from './screens/Cwiczenia/Biceps_folder/UginanieSztanga';
+import UginanieLinka from './screens/Cwiczenia/Biceps_folder/UginanieLinka';
 
 
 
@@ -174,6 +181,70 @@ const DrawerNavigator = () => {
                }, drawerLabel:''}}/> 
 
                <Drawer.Screen name="Pompki" component={Pompki} options={{title: 'Pompki na poręczach' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="HipThrust" component={HipThrust} options={{title: 'Hip thrusty' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="Przysiady" component={Przysiady} options={{title: 'Przysiady bułgarskie' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+                <Drawer.Screen name="PrzysiadyKlasyczne" component={PrzysiadyKlasyczne} options={{title: 'Przysiady klasyczne' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+                <Drawer.Screen name="MartwyCiag" component={MartwyCiag} options={{title: 'Rumuński martwy ciąg' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="Wykroki" component={Wykroki} options={{title: 'Wykroki' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+                <Drawer.Screen name="Wchodzenie" component={Wchodzenie} options={{title: 'Wchodzenie na podwyższenie' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="UginanieSztanga" component={UginanieSztanga} options={{title: 'Uginanie przedramion ze sztangą' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="UginanieLinka" component={UginanieLinka} options={{title: 'Uginanie przedramion z linką wyciągu dolnego oburącz' ,headerStyle: {
                  backgroundColor: '#008080', 
                },headerTitleStyle: {
                  fontWeight: 'bold',
