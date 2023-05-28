@@ -13,21 +13,18 @@ return (
 
 
    
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Lat Pulldown </Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('WyciskaniePlecy')}>
+    <Text style={globalStyles.text}>Wiosłowanie jednorącz</Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Face Pull </Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Podciaganie')}>
+    <Text style={globalStyles.text}>Podciąganie</Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Podciąganie </Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Facepull')}>
+    <Text style={globalStyles.text}>Face Pull</Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Wyciskanie jednorącz</Text>
-  </Pressable>
 
   </View>
         

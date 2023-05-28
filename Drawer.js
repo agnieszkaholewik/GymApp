@@ -30,7 +30,10 @@ import Wykroki from './screens/Cwiczenia/Udaipos_folder/Wykroki';
 import Wchodzenie from './screens/Cwiczenia/Udaipos_folder/Wchodzenie';
 import UginanieSztanga from './screens/Cwiczenia/Biceps_folder/UginanieSztanga';
 import UginanieLinka from './screens/Cwiczenia/Biceps_folder/UginanieLinka';
-
+import WyciskanieTriceps from './screens/Cwiczenia/Triceps_folder/WyciskanieTriceps';
+import WyciskaniePlecy from './screens/Cwiczenia/Plecy_folder/WyciskaniePlecy';
+import Podciaganie from './screens/Cwiczenia/Plecy_folder/Podciaganie';
+import Facepull from './screens/Cwiczenia/Plecy_folder/Facepull';
 
 
 const Drawer = createDrawerNavigator();
@@ -245,6 +248,35 @@ const DrawerNavigator = () => {
                }, drawerLabel:''}}/> 
 
                <Drawer.Screen name="UginanieLinka" component={UginanieLinka} options={{title: 'Uginanie przedramion z linką wyciągu dolnego oburącz' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/>
+
+               <Drawer.Screen name="WyciskanieTriceps" component={UginanieLinka} options={{title: 'Wyciskanie jednorączkowe hantla na triceps' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+                <Drawer.Screen name="WyciskaniePlecy" component={UginanieLinka} options={{title: 'Wiosłowanie jednorącz' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+               <Drawer.Screen name="Podciaganie" component={UginanieLinka} options={{title: 'Podciąganie' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+                <Drawer.Screen name="Facepull" component={UginanieLinka} options={{title: 'Face Pull' ,headerStyle: {
                  backgroundColor: '#008080', 
                },headerTitleStyle: {
                  fontWeight: 'bold',
