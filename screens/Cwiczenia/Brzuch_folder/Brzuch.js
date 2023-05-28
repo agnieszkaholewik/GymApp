@@ -21,7 +21,7 @@ return (
 
   
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Skosy')}>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rowerek')}>
     <Text style={globalStyles.text}>Rowerek </Text>
   </Pressable>
 

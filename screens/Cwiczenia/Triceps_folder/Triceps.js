@@ -13,8 +13,8 @@ return (
 
 
    
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Podnoszenie hantla jednorącz na siedząco </Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('WyciskanieTriceps')}>
+    <Text style={globalStyles.text}>Wyciskanie jednorączkowe hantla na triceps </Text>
   </Pressable>
 
  

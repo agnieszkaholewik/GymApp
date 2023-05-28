@@ -36,7 +36,10 @@ import Plank from './screens/Cwiczenia/Brzuch_folder/Plank';
 import Rowerek from './screens/Cwiczenia/Brzuch_folder/Rowerek';
 import UginanieKolano from './screens/Cwiczenia/Biceps_folder/UginanieKolano';
 import WyciskanieBiceps from './screens/Cwiczenia/Biceps_folder/WyciskanieBiceps';
-
+import WyciskanieTriceps from './screens/Cwiczenia/Triceps_folder/WyciskanieTriceps';
+import WyciskaniePlecy from './screens/Cwiczenia/Plecy_folder/WyciskaniePlecy';
+import Podciaganie from './screens/Cwiczenia/Plecy_folder/Podciaganie';
+import Facepull from './screens/Cwiczenia/Plecy_folder/Facepull';
 
 
 const Drawer = createDrawerNavigator();
@@ -258,7 +261,7 @@ const DrawerNavigator = () => {
                  
                }, drawerLabel:''}}/> 
 
-               <Drawer.Screen name="FacePull" component={FacePull} options={{title: 'Shoulder Press' ,headerStyle: {
+               <Drawer.Screen name="FacePull" component={FacePull} options={{title: 'Face Pull' ,headerStyle: {
                  backgroundColor: '#008080', 
                },headerTitleStyle: {
                  fontWeight: 'bold',
@@ -305,8 +308,30 @@ const DrawerNavigator = () => {
                  color:'white',
                  
                }, drawerLabel:''}}/> 
-      
-      
+
+               <Drawer.Screen name="WyciskanieTriceps" component={WyciskanieTriceps} options={{title: 'Wyciskanie jednorączkowe hantla na triceps ' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="WyciskaniePlecy" component={WyciskaniePlecy} options={{title: 'Wiosłowanie jednorącz ' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
+
+               <Drawer.Screen name="Podciaganie" component={Podciaganie} options={{title: 'Podciąganie ' ,headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                 
+               }, drawerLabel:''}}/> 
       
       </Drawer.Navigator>
      );
