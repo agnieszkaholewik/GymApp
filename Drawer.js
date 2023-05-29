@@ -64,13 +64,7 @@ const DrawerNavigator = () => {
                  color:'white',
                 
                },}}/>
-        <Drawer.Screen name="SpisĆwiczeń" component={Spisćwiczeń} options={{title:'Zbiór ćwiczeń',headerStyle: {
-                 backgroundColor: '#008080', 
-               },headerTitleStyle: {
-                 fontWeight: 'bold',
-                 color:'white',
-                
-               },}}/>
+        
         <Drawer.Screen name="Stoper" component={Stoper} options={{title:'Stoper',headerStyle: {
                  backgroundColor: '#008080', 
                },headerTitleStyle: {
@@ -100,14 +94,22 @@ const DrawerNavigator = () => {
                 
                }, }}/> 
 
-     
-               <Drawer.Screen name="Klatka" component={Klatka} options={{title: 'KLATKA PIERSIOWA',headerStyle: {
+               <Drawer.Screen name="SpisĆwiczeń" component={Spisćwiczeń} options={{title:'Zbiór ćwiczeń',headerStyle: {
                  backgroundColor: '#008080', 
                },headerTitleStyle: {
                  fontWeight: 'bold',
                  color:'white',
+                
+               },}}/>
+
+     
+               <Drawer.Screen name="Klatka" component={Klatka} options={{title: 'KLATKA PIERSIOWA',headerStyle: {
+                 backgroundColor: '#008080',  
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
                  
-               }, drawerLabel:''}}/> 
+               }, drawerLabel:'          - Klatka piersiowa'}}/> 
 
                <Drawer.Screen name="Plecy" component={Plecy} options={{title: 'PLECY',headerStyle: {
                  backgroundColor: '#008080', 
@@ -115,7 +117,7 @@ const DrawerNavigator = () => {
                  fontWeight: 'bold',
                  color:'white',
                  
-               }, drawerLabel:''}}/> 
+               }, drawerLabel:'          - Plecy'}}/> 
 
                <Drawer.Screen name="Barki" component={Barki} options={{title: 'BARKI',headerStyle: {
                  backgroundColor: '#008080', 
@@ -123,7 +125,7 @@ const DrawerNavigator = () => {
                  fontWeight: 'bold',
                  color:'white',
                  
-               }, drawerLabel:''}}/> 
+               }, drawerLabel:'          - Barki'}}/> 
 
                <Drawer.Screen name="Biceps" component={Biceps} options={{title: 'BICEPS',headerStyle: {
                  backgroundColor: '#008080', 
@@ -131,7 +133,7 @@ const DrawerNavigator = () => {
                  fontWeight: 'bold',
                  color:'white',
                  
-               }, drawerLabel:''}}/> 
+               }, drawerLabel:'          - Biceps'}}/> 
 
                <Drawer.Screen name="Triceps" component={Triceps} options={{title: 'TRICEPS',headerStyle: {
                  backgroundColor: '#008080', 
@@ -139,7 +141,7 @@ const DrawerNavigator = () => {
                  fontWeight: 'bold',
                  color:'white',
                  
-               }, drawerLabel:''}}/> 
+               }, drawerLabel:'          - Triceps'}}/> 
 
                <Drawer.Screen name="Udaipos" component={Udaipos} options={{title: 'UDA I POŚLADKI',headerStyle: {
                  backgroundColor: '#008080', 
@@ -147,7 +149,7 @@ const DrawerNavigator = () => {
                  fontWeight: 'bold',
                  color:'white',
                  
-               }, drawerLabel:''}}/> 
+               }, drawerLabel:'          - Uda i pośladki'}}/> 
 
                <Drawer.Screen name="Brzuch" component={Brzuch} options={{title: 'BRZUCH',headerStyle: {
                  backgroundColor: '#008080', 
@@ -155,7 +157,7 @@ const DrawerNavigator = () => {
                  fontWeight: 'bold',
                  color:'white',
                  
-               }, drawerLabel:''}}/> 
+               }, drawerLabel:'          - Brzuch'}}/> 
 
                <Drawer.Screen name="Lydki" component={Lydki} options={{title: 'ŁYDKI' ,headerStyle: {
                  backgroundColor: '#008080', 
@@ -163,7 +165,7 @@ const DrawerNavigator = () => {
                  fontWeight: 'bold',
                  color:'white',
                  
-               }, drawerLabel:''}}/> 
+               }, drawerLabel:'          - Łydki'}}/> 
 
                <Drawer.Screen name="Rozpietki" component={Rozpietki} options={{title: 'Rozpiętki z hantlami' ,headerStyle: {
                  backgroundColor: '#008080', 

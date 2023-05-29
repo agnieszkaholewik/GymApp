@@ -1,12 +1,27 @@
 import { useNavigation } from "@react-navigation/native";
 import React from 'react';
-import {View, Text, StyleSheet, Button, Pressable} from 'react-native';
+import {View, Text, StyleSheet, Button, Pressable, Image} from 'react-native';
 import { globalStyles } from "../../../styles/global";
+import { ScrollView } from "react-native-gesture-handler";
 
 export default function PrzysiadyKlasyczne(){
 const navigation = useNavigation();
 return (
+    <ScrollView>
     <View>
+    <Image  
+       style={{ width: 210,
+    height: 190,
+    resizeMode: 'stretch',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop:20
+   }}
+   source={require('../../../assets/Przysiadk.png')}
+
+        />
  
     <Text style={globalStyles.text}>
     {'\n'}
@@ -26,5 +41,6 @@ return (
     </Text>
     
    </View>
+   </ScrollView>
  )
  }
