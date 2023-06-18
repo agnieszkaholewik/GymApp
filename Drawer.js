@@ -64,6 +64,14 @@ const DrawerNavigator = () => {
                  color:'white',
                 
                },}}/>
+
+               <Drawer.Screen name="Przypomnienia" component={Przypomnienia}options={{headerStyle: {
+                 backgroundColor: '#008080', 
+               },headerTitleStyle: {
+                 fontWeight: 'bold',
+                 color:'white',
+                
+               }, }}/> 
         
         <Drawer.Screen name="Stoper" component={Stoper} options={{title:'Stoper',headerStyle: {
                  backgroundColor: '#008080', 
@@ -86,13 +94,7 @@ const DrawerNavigator = () => {
                  color:'white',
                 
                },}}/>
-        <Drawer.Screen name="Przypomnienia" component={Przypomnienia}options={{headerStyle: {
-                 backgroundColor: '#008080', 
-               },headerTitleStyle: {
-                 fontWeight: 'bold',
-                 color:'white',
-                
-               }, }}/> 
+        
 
                <Drawer.Screen name="SpisĆwiczeń" component={Spisćwiczeń} options={{title:'Zbiór ćwiczeń',headerStyle: {
                  backgroundColor: '#008080', 

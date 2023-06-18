@@ -24,9 +24,9 @@ return (
 
         />
  
-    <Text style={globalStyles.text}>
+    <Text style={globalStyles.excerciseText}>
     {'\n'}
-    1. Zacznij, leżąc na ławce treningowej. Umieść stopy płasko na podłodze, a plecy, głowę i pośladki dobrze przylegają do ławki. Szczególnie ważne jest, aby dolna część pleców była dobrze podparta.{'\n'}{'\n'}
+     1. Zacznij, leżąc na ławce treningowej. Umieść stopy płasko na podłodze, a plecy, głowę i pośladki dobrze przylegają do ławki. Szczególnie ważne jest, aby dolna część pleców była dobrze podparta.{'\n'}{'\n'}
 
 2. Chwyt sztangi szeroko, umieszczając dłonie nieco szerzej niż szerokość ramion. Palce powinny być skierowane w stronę stóp, a kciuki powinny otaczać sztangę.{'\n'}{'\n'}
 
