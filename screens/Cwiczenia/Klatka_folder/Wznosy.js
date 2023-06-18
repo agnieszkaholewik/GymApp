@@ -2,32 +2,27 @@ import { useNavigation } from "@react-navigation/native";
 import React from 'react';
 import {View, Text, StyleSheet, Button, Pressable} from 'react-native';
 import { globalStyles } from "../../../styles/global";
-import { ScrollView } from "react-native-gesture-handler";
 
 export default function Wznosy(){
 const navigation = useNavigation();
 return (
-    <ScrollView>
     <View>
  
     <Text style={globalStyles.text}>
     {'\n'}
-    1. Zacznij, stojąc naprzeciwko maszyny wyciągu dolnego. Ustaw dźwignię na niskiej pozycji, tak aby rączki wyciągu znajdowały się na wysokości ud.{'\n'}{'\n'}
+    1. Zacznij, leżąc na ławce treningowej. Umieść stopy płasko na podłodze, a plecy, głowę i pośladki dobrze przylegają do ławki. Szczególnie ważne jest, aby dolna część pleców była dobrze podparta.{'\n'}{'\n'}
 
-2. Stań w lekkim rozkroku, aby zapewnić stabilność. Uchwyć rączki wyciągu dolnego, trzymając je wyciągnięte przed sobą, dłonie skierowane w dół i szerokość chwytu trochę większa niż szerokość ramion.{'\n'}{'\n'}
+2. Chwyt sztangi szeroko, umieszczając dłonie nieco szerzej niż szerokość ramion. Palce powinny być skierowane w stronę stóp, a kciuki powinny otaczać sztangę.{'\n'}{'\n'}
 
-3. Początkowa pozycja to ręce opuszczone z lekkim skrzyżowaniem przed sobą.{'\n'}{'\n'}
+3. Teraz unieś sztangę, prostując ramiona. Pamiętaj, aby unosić sztangę równolegle do podłogi i utrzymywać stabilną pozycję.{'\n'}{'\n'}
 
-4. Następnie, kontrolując ruch i napinając mięśnie ramion, unieś ręce na boki, prowadząc wyciąg w górę do poziomu barków. Staraj się utrzymać stabilną pozycję ciała i unikaj nadmiernego odchylenia w tył.{'\n'}{'\n'}
+4. Zatrzymaj się, gdy sztanga znajdzie się na poziomie klatki piersiowej. W tej pozycji poczujesz napięcie w mięśniach klatki piersiowej i ramion.{'\n'}{'\n'}
 
-5. Zatrzymaj się na chwilę, gdy ramiona są na wysokości barków. Poczuj napięcie w mięśniach ramion.{'\n'}{'\n'}
+5. Następnie, kontrolowanie ruchu, powoli opuść sztangę, zginając łokcie. Upewnij się, że sztanga opuszcza się w kontrolowany sposób, unikając nagłych ruchów.{'\n'}{'\n'}
 
-6. Powoli opuść ręce, kontrolując ruch, aby wrócić do początkowej pozycji. {'\n'}{'\n'}
-
-7. Powtórz ten ruch przez zadaną liczbę powtórzeń.
+6. Powtórz ten ruch, unosząc i opuszczając sztangę przez zadaną liczbę powtórzeń.
     </Text>
     
    </View>
-   </ScrollView>
  )
  }
