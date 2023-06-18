@@ -13,22 +13,17 @@ return (
 
 
    
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Arnoldki </Text>
+ 
+
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('FacePull')}>
+    <Text style={globalStyles.text}>Shoulder Press </Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Face Pull </Text>
-  </Pressable>
-
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Odwodzenie')}>
     <Text style={globalStyles.text}>Odwodzenie ramion w bok ze sztangielkami</Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Cuban Press</Text>
-  </Pressable>
-
+ 
   </View>
         
 )

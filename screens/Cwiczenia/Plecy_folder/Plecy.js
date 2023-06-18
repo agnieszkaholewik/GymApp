@@ -13,21 +13,18 @@ return (
 
 
    
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Wiosłowanie jednorącz </Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('WyciskaniePlecy')}>
+    <Text style={globalStyles.text}>Wiosłowanie jednorącz</Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Face Pull </Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Podciaganie')}>
+    <Text style={globalStyles.text}>Podciąganie</Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Dzień dobry </Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Facepull')}>
+    <Text style={globalStyles.text}>Face Pull</Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Ściąganie drążka wyciągu górnego podchwytem do klatki</Text>
-  </Pressable>
 
   </View>
         

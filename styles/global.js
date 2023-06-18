@@ -27,6 +27,7 @@ export const globalStyles = StyleSheet.create({
         fontWeight: 'bold',
         letterSpacing: 0.25,
         color: 'black',
+        
       },
       header: {
         backgroundColor:"#008b8b"
@@ -116,7 +117,15 @@ export const globalStyles = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         width: 80
-      }
+      },
+      excerciseText: {
+        fontSize: 16,
+        lineHeight: 21,
+        fontWeight: 'bold',
+        letterSpacing: 0.25,
+        color: 'black',
+        padding:10
+      },
 
       
 

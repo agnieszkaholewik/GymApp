@@ -25,7 +25,7 @@ return (
     <Text style={globalStyles.text}>Wznosy ramion z wykorzystaniem dolnego wyciągu </Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Pompki')}>
     <Text style={globalStyles.text}>Pompki na poręczach </Text>
   </Pressable>
 

@@ -13,17 +13,13 @@ return (
 
 
    
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Dipy na maszynie </Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('WyciskanieTriceps')}>
+    <Text style={globalStyles.text}>Wyciskanie jednorączkowe hantla na triceps </Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Prostowanie przedramion z hantlem zza głowy siedząc</Text>
-  </Pressable>
+ 
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Wyprosty na wyciągu górnym</Text>
-  </Pressable>
+ 
 
   
 

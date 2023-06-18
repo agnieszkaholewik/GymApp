@@ -31,7 +31,7 @@ const HomeTabNavigator = () => {
          <Stack.Screen name="Stoper" component={Stoper} />
          <Stack.Screen name="TwójTrening" component={TwójTrening} options={{title:'Twój trening'}}/>
          <Stack.Screen name="Przypomnienia" component={Przypomnienia} />
-         <Stack.Screen name="Klatka" component={Klatka} />
+         
          </Stack.Navigator>
         </NavigationContainer>
         </View>

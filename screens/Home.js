@@ -16,7 +16,7 @@ export default function Home(props){
     }
 
     const pressHandler2=()=>{
-        navigation.navigate('SpisĆwiczeń')
+        navigation.navigate('Przypomnienia')
     }
 
     const pressHandler3=()=>{
@@ -28,7 +28,7 @@ export default function Home(props){
     }
 
     const pressHandler5=()=> {
-        navigation.navigate('Przypomnienia')
+        navigation.navigate('SpisĆwiczeń')
     }
 
     
@@ -36,7 +36,7 @@ export default function Home(props){
 
 
     
-    const { onPress, title = 'Monitorowanie wagi', title2='Zbiór Ćwiczeń', title3='Stoper', title4='Twój trening', title5='Przypomnienia' } = props;
+    const { onPress, title = 'Monitorowanie wagi', title2='Przypomnienia', title3='Stoper', title4='Twój trening', title5='Zbiór Ćwiczeń' } = props;
     return (
 
        <View>

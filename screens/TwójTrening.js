@@ -12,6 +12,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 
+
 export default function TwójTrening(props) {
 
   const [lists, setLists] = useState(tempData);

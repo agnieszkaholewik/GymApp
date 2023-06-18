@@ -13,20 +13,20 @@ return (
 
 
    
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Uginanie przedramion ze sztangą </Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('UginanieSztanga')}>
+    <Text style={globalStyles.text}>Uginanie przedramion ze sztangielkami </Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('UginanieLinka')}>
     <Text style={globalStyles.text}>Uginanie przedramion z linką wyciągu dolnego oburącz</Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Uginanie ramion z hantlami na modlitewniku</Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('UginanieKolano')}>
+    <Text style={globalStyles.text}>Uginanie przedramienia ze sztangielką przez kolano</Text>
   </Pressable>
 
-  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('Rozpietki')}>
-    <Text style={globalStyles.text}>Zottmann Curl</Text>
+  <Pressable style={globalStyles.button} onPress={() => navigation.navigate('WyciskanieBiceps')}>
+    <Text style={globalStyles.text}>Wyciskanie hantla zza głowy siedząc</Text>
   </Pressable>
 
   </View>
