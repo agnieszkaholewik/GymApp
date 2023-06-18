@@ -1,14 +1,26 @@
 import { useNavigation } from "@react-navigation/native";
 import React from 'react';
-import {View, Text, StyleSheet, Button, Pressable} from 'react-native';
+import {View, Text, StyleSheet, Button, Pressable, Image} from 'react-native';
 import { globalStyles } from "../../../styles/global";
 
 export default function Wyciskanie(){
 const navigation = useNavigation();
 return (
     <View>
- 
-    <Text style={globalStyles.text}>
+    <Image  
+       style={{ width: 210,
+    height: 190,
+    resizeMode: 'stretch',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop:20
+   }}
+   source={require('../../../assets/WyciskanieKlatka.png')}
+
+        />
+    <Text style={globalStyles.excerciseText}>
     {'\n'}
     1. Zacznij, leżąc na ławce treningowej. Umieść stopy płasko na podłodze, a plecy, głowę i pośladki dobrze przylegają do ławki. Szczególnie ważne jest, aby dolna część pleców była dobrze podparta.{'\n'}{'\n'}
 

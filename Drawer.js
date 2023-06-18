@@ -12,15 +12,35 @@ import Barki from './screens/Cwiczenia/Barki_folder/Barki';
 import {
   createDrawerNavigator,
 } from '@react-navigation/drawer';
-import Klatka from './screens/Cwiczenia/Klatka';
-import Biceps from './screens/Cwiczenia/Biceps';
-import Triceps from './screens/Cwiczenia/Triceps';
-import Udaipos from './screens/Cwiczenia/Udaipos';
-import Brzuch from './screens/Cwiczenia/Brzuch';
-import Lydki from './screens/Cwiczenia/Lydki';
+import Klatka from './screens/Cwiczenia/Klatka_folder/Klatka';
+import Biceps from './screens/Cwiczenia/Biceps_folder/Biceps';
+import Triceps from './screens/Cwiczenia/Triceps_folder/Triceps';
+import Udaipos from './screens/Cwiczenia/Udaipos_folder/Udaipos';
+import Brzuch from './screens/Cwiczenia/Brzuch_folder/Brzuch';
+import Lydki from './screens/Cwiczenia/Lydki_folder/Lydki';
 
-
-
+import Rozpietki from './screens/Cwiczenia/Klatka_folder/Rozpietki';
+import FacePull from './screens/Cwiczenia/Barki_folder/FacePull';
+import Odwodzenie from './screens/Cwiczenia/Barki_folder/Odwodzenie';
+import UginanieKolano from './screens/Cwiczenia/Biceps_folder/UginanieKolano';
+import UginanieLinka from './screens/Cwiczenia/Biceps_folder/UginanieLinka';
+import WyciskanieBiceps from './screens/Cwiczenia/Biceps_folder/WyciskanieBiceps';
+import UginanieSztanga from './screens/Cwiczenia/Biceps_folder/UginanieSztanga';
+import Plank from './screens/Cwiczenia/Brzuch_folder/Plank';
+import Rowerek from './screens/Cwiczenia/Brzuch_folder/Rowerek';
+import Pompki from './screens/Cwiczenia/Klatka_folder/Pompki';
+import Wyciskanie from './screens/Cwiczenia/Klatka_folder/Wyciskanie';
+import Wznosy from './screens/Cwiczenia/Klatka_folder/Wznosy';
+import Facepull from './screens/Cwiczenia/Plecy_folder/Facepull';
+import Podciaganie from './screens/Cwiczenia/Plecy_folder/Podciaganie';
+import WyciskaniePlecy from './screens/Cwiczenia/Plecy_folder/WyciskaniePlecy';
+import WyciskanieTriceps from './screens/Cwiczenia/Triceps_folder/WyciskanieTriceps';
+import HipThrust from './screens/Cwiczenia/Udaipos_folder/HipThrust';
+import MartwyCiag from './screens/Cwiczenia/Udaipos_folder/MartwyCiag';
+import Przysiady from './screens/Cwiczenia/Udaipos_folder/Przysiady';
+import PrzysiadyKlasyczne from './screens/Cwiczenia/Udaipos_folder/PrzysiadyKlasyczne';
+import Wykroki from './screens/Cwiczenia/Udaipos_folder/Wykroki';
+import Wchodzenie from './screens/Cwiczenia/Udaipos_folder/Wchodzenie';
 
 
 const Drawer = createDrawerNavigator();
@@ -318,21 +338,21 @@ const DrawerNavigator = () => {
                  
                }, drawerLabel:''}}/> 
 
-               <Drawer.Screen name="Rozpietki" component={Rozpietki} options={{title: 'Rozpiętki z hantlami' ,headerStyle: {
+               {/* <Drawer.Screen name="Rozpietki" component={Rozpietki} options={{title: 'Rozpiętki z hantlami' ,headerStyle: {
                  backgroundColor: '#008080', 
                },headerTitleStyle: {
                  fontWeight: 'bold',
                  color:'white',
                  
-               }, drawerLabel:''}}/> 
+               }, drawerLabel:''}}/>  */}
 
-               <Drawer.Screen name="Wyciskanie" component={Wyciskanie} options={{title: 'Wyciskanie sztangi' ,headerStyle: {
+               {/* <Drawer.Screen name="Wyciskanie" component={Wyciskanie} options={{title: 'Wyciskanie sztangi' ,headerStyle: {
                  backgroundColor: '#008080', 
                },headerTitleStyle: {
                  fontWeight: 'bold',
                  color:'white',
                  
-               }, drawerLabel:''}}/> 
+               }, drawerLabel:''}}/>  */}
       
       </Drawer.Navigator>
      );
